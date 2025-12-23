@@ -1,0 +1,39 @@
+/* Türkçe Açıklama: Koyu tema, okunaklı tipografi, sabit harita yükseklikleri */
+:root{
+  --bg:#0b1220; --card:#111a2b; --border:#1f2a3d; --text:#e5edf8; --muted:#a1aec8;
+  --primary:#4f8cff; --primary-dark:#3b6ed6; --accent:#22c55e; --warning:#f59e0b; --danger:#ef4444;
+}
+*{box-sizing:border-box} html,body{height:100%} body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);margin:0}
+.navbar{background:#0e1526;border-bottom:1px solid var(--border);padding:12px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.navbar .brand{color:var(--primary);font-weight:700;text-decoration:none;font-size:18px;display:flex;align-items:center;gap:8px}
+.nav-links a{margin-left:16px;color:#cbd5e1;text-decoration:none;font-weight:600}
+.nav-links a:hover{color:var(--primary)}
+.container{max-width:1180px;margin:24px auto;padding:0 16px}
+.title{color:var(--primary);display:flex;align-items:center;gap:8px;font-weight:700}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;box-shadow:0 10px 24px rgba(0,0,0,.35);transition:.2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(0,0,0,.45)}
+.grid-2,.grid-3{display:grid;gap:12px;margin-bottom:12px} .grid-2{grid-template-columns:1fr 1fr} .grid-3{grid-template-columns:1fr 1fr 1fr}
+label{font-size:13px;color:var(--muted);font-weight:600}
+input,select,textarea,button{font-family:inherit}
+input,select,textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:10px;background:#0e1626;color:var(--text);font-size:14px}
+input::placeholder{color:#7b8aa6}
+input:focus,select:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(79,140,255,.2)}
+.btn{border:none;padding:12px 16px;border-radius:12px;cursor:pointer;font-weight:700}
+.btn.primary{background:var(--primary);color:#fff;transition:background .2s,transform .1s}
+.btn.primary:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.btn.outline{background:#0e1626;border:1px solid var(--primary);color:var(--primary)}
+.btn.outline:hover{background:#132039}
+.toast{margin-top:12px;padding:12px;border-radius:10px;background:#132039;color:#cfe2ff;border:1px solid #1e3a63}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border-bottom:1px solid var(--border);padding:10px;text-align:left;font-size:14px}
+.table th{color:#9db3d8;font-weight:700}
+.status{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;font-size:12px}
+.status.plan{background:#16233b;color:#79a6ff}
+.status.route{background:#0f2b2f;color:#55d6e8}
+.status.run{background:#102818;color:#22c55e}
+.status.done{background:#132244;color:#6ea8fe}
+.status.fail{background:#2a1212;color:#ef4444}
+#map,#dashMap,#trackMap,#volMap,#driverMap{height:360px;border:1px solid var(--border);border-radius:12px}
+
+
+
